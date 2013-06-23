@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 22-06-2013 23:52:42
+EESchema Schematic File Version 2
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,7 +29,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-EELAYER 27 0
+LIBS:signal_conditioning-cache
+EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -654,4 +655,85 @@ Wire Wire Line
 	1600 1950 1600 1850
 Wire Wire Line
 	1600 2350 1600 2400
+Wire Wire Line
+	1700 5300 1500 5300
+Wire Wire Line
+	1350 5400 1700 5400
+Wire Wire Line
+	1200 5500 1700 5500
+Wire Wire Line
+	1050 5600 1700 5600
+Text Label 1700 5300 0    60   ~ 0
+IN_1
+Text Label 1700 5400 0    60   ~ 0
+IN_3
+Text Label 1700 5500 0    60   ~ 0
+IN_2
+Text Label 1700 5600 0    60   ~ 0
+IN_4
+$Comp
+L R R12
+U 1 1 51C68ECB
+P 1500 5050
+F 0 "R12" V 1580 5050 40  0000 C CNN
+F 1 "R" V 1507 5051 40  0000 C CNN
+F 2 "" V 1430 5050 30  0000 C CNN
+F 3 "" H 1500 5050 30  0000 C CNN
+	1    1500 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R11
+U 1 1 51C68ED8
+P 1350 5050
+F 0 "R11" V 1430 5050 40  0000 C CNN
+F 1 "R" V 1357 5051 40  0000 C CNN
+F 2 "" V 1280 5050 30  0000 C CNN
+F 3 "" H 1350 5050 30  0000 C CNN
+	1    1350 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 51C68EDE
+P 1200 5050
+F 0 "R10" V 1280 5050 40  0000 C CNN
+F 1 "R" V 1207 5051 40  0000 C CNN
+F 2 "" V 1130 5050 30  0000 C CNN
+F 3 "" H 1200 5050 30  0000 C CNN
+	1    1200 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 51C68EE4
+P 1050 5050
+F 0 "R9" V 1130 5050 40  0000 C CNN
+F 1 "R" V 1057 5051 40  0000 C CNN
+F 2 "" V 980 5050 30  0000 C CNN
+F 3 "" H 1050 5050 30  0000 C CNN
+	1    1050 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 5300 1050 5600
+Wire Wire Line
+	1200 5500 1200 5300
+Wire Wire Line
+	1350 5300 1350 5400
+Wire Wire Line
+	1050 4800 1500 4800
+Connection ~ 1200 4800
+Connection ~ 1350 4800
+$Comp
+L +3.3V #PWR027
+U 1 1 51C69014
+P 1200 4800
+F 0 "#PWR027" H 1200 4760 30  0001 C CNN
+F 1 "+3.3V" H 1200 4910 30  0000 C CNN
+F 2 "" H 1200 4800 60  0000 C CNN
+F 3 "" H 1200 4800 60  0000 C CNN
+	1    1200 4800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
