@@ -1,4 +1,4 @@
-update=22-06-2013 22:41:29
+update=Sun 23 Jun 2013 05:08:24 PM WEST
 version=1
 last_client=cvpcb
 [eeschema]
@@ -77,7 +77,8 @@ LibName14=dip_sockets
 LibName15=pga_sockets
 LibName16=valves
 LibName17=pot-farnell
-LibDir=../../libs
+LibName18=/media/win7/Users/João/Documents/KiCad/libs/SparkFun
+LibDir=../../../../../joao
 [general]
 version=1
 [cvpcb]

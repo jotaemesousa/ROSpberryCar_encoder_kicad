@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Sun 23 Jun 2013 06:56:36 AM WEST
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Sun 23 Jun 2013 05:08:54 PM WEST
 
 BeginCmp
 TimeStamp = /51C62AB2;
@@ -11,14 +11,14 @@ BeginCmp
 TimeStamp = /51C616B8;
 Reference = P1;
 ValeurCmp = CONN_6;
-IdModule  = PIN_ARRAY-6X1;
+IdModule  = SparkFun-1X06_LOCK;
 EndCmp
 
 BeginCmp
 TimeStamp = /51C616AB;
 Reference = P2;
 ValeurCmp = CONN_6;
-IdModule  = PIN_ARRAY-6X1;
+IdModule  = SparkFun-1X06_LOCK;
 EndCmp
 
 BeginCmp
